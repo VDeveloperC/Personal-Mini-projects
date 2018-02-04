@@ -1,0 +1,76 @@
+<html>
+    <head>
+    <title>
+    Choose Your Own Adventure    
+    </title>
+    </head>
+    
+    <style>
+        body {
+            background-color: #8fbc8f;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <body>
+    </body>
+    <script>
+    var name =  prompt("What is your name?");
+    var greeting = "Hello ";
+        
+        greeting +=name;
+        document.write("<p>" + greeting + "</p>");
+        
+        var story = " You see yourself in a random room and have to escape. Do you want to: \n1. Pick the door lock \n2. Try to get out through the window";
+        var escape = prompt(story);
+        var right = 0;
+        var jump = 0;
+        
+        console.log("user chose: " + escape);
+        document.write("<p>" + story + "</p><p> You chose " + escape + "</p>");
+        
+        console.log(typeof escape);
+        escape = Number(escape);
+        console.log(typeof escape);
+        if(escape === 1)
+            {
+                //deal with person picking door lock
+                story = "You attempt to pick the lock on the door and after multiple attempts you are able to unlock it. After opening the door there is a hallway do you run: \n1. Right \n2. Left";
+                right = prompt(story);
+                console.log("user chose: " + right);
+                document.write("<p>" + story + "</p><p> You chose " + right +"</p>");
+            }
+        else {
+            //deal with choosing window escape
+            story ="You check the window and see that it isn't locked but you are on the second floor of a building. Do you: \n1. Take your chances and jump out. \n2. You try to climb dowwn the old rusty drain pipe."
+            jump = prompt(story);
+            console.log("user chose: " + jump);
+            document.write("<p>" + story + "</p><p> You chose: " + jump);
+        }
+        
+        right = Number(right);
+        jump = Number(jump);
+        
+        if (right === 1)
+            {
+                story = "Oh no, you turned right and found a gaurd he grabs you and knocks you out.";
+                document.write("<p>" + story + "</p>");
+            }
+        else if (right === 2)
+            {
+                story = "It's good you turned left, you see an exit that leads to a staircase where you are able to escape!";
+                document.write("<p>" + story + "</p>");
+            }
+        
+        if ( jump === 1)
+            {
+                story = "You jump off from the 2nd floor and sprain your left ankle but are able to limp away until you find a busy road and catch a ride.";
+                document.write("<p>" + story + "</p>");
+            }
+        else if (jump === 2)
+            {
+                story = "You try to climb down the pipe but it is loose and breaks off, you end up falling and the noise singals gaurds find you and catch you.";
+                document.write("<p>" + story + "</p>");
+            }
+        document.write("The END");
+    </script>
+</html>
