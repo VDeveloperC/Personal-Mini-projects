@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Convert USD to ?
+    </title>
+</head>
+
+    <style>
+    body {
+            background-image: url("http://www.ebony.com/wp-content/uploads/2016/07/foreign_money_background_original_7575.jpg");
+            background-repeat: repeat;
+            background-size: 100%;
+            background-attachment: Fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+    <h1> Exchange Rates</h1>
+    <body>
+    <input type="text" id="GBP" size="10" value="0" onchange="gbpfunc()"/>
+    <label for="GBP"> GBP </label>
+
+    </br>
+
+    <input type="text" id="USD" size="10" value="0" onchange="usdfunc()" />
+    <label for="USD"> USD </label>
+
+    </br>
+
+    <input type="text" id="EUR" size="10" value="0" onchange="eurfunc()" />
+    <label for="EUR"> EUR </label>
+
+    </br>
+
+    <input type="text" id="CAD" size="10" value="0" onchange="cadfunc()" />
+    <label for="CAD"> CAD </label>
+
+    </br>
+
+    <input type="text" id="AUD" size="10" value="0" onchange="audfunc()" />
+    <label for="AUD"> AUD </label> 
+
+    </br>
+
+    <input type="text" id="JPY" size="10" value="0" onchange="jpyfunc()" />
+    <label for="JPY"> JPY </label>
+    
+    </br>
+    
+    <input type="text" id="CNY" size="10" value="0" onchange="cnyfunc()" />
+    <label for="CNY"> CNY </label>
+    
+    
+
+
+    <script>
+       var gbp, usd, eur, cad, aud, jpy, cny;
+        
+function curfunc()
+{
+    gbp = document.getElementById("GBP");
+    usd = document.getElementById("USD");
+    eur = document.getElementById("EUR");
+    cad = document.getElementById("CAD");
+    aud = document.getElementById("AUD");
+    jpy = document.getElementById("JPY");
+    cny = document.getElementById("CNY");
+}
+
+function gbpfunc()
+{
+    usd.value = parseFloat(gbp.value) * 0.49246;
+    eur.value = parseFloat(gbp.value) * 0.69714;
+    cad.value = parseFloat(gbp.value) * 0.50221;
+    aud.value = parseFloat(gbp.value) * 0.43497;
+    jpy.value = parseFloat(gbp.value) * 155.38;
+    
+}
+
+function eurfunc()
+{
+    gbp.value = parseFloat(eur.value) * 1.43448;
+    usd.value = parseFloat(eur.value) * 0.70641;
+    cad.value = parseFloat(eur.value) * 0.72037;
+    aud.value = parseFloat(eur.value) * 0.62382;
+    jpy.value = parseFloat(gbp.value) * 137.10;
+}
+
+function cadfunc()
+{
+    gbp.value = parseFloat(cad.value) * 1.99169;
+    usd.value = parseFloat(cad.value) * 0.98054;
+    eur.value = parseFloat(cad.value) * 1.38814;
+    aud.value = parseFloat(cad.value) * 0.86613;
+    jpy.value = parseFloat(gbp.value) * 88.85;
+}
+
+function audfunc()
+{
+    gbp.value = parseFloat(aud.value) * 2.29964;
+    usd.value = parseFloat(aud.value) * 1.13262;
+    eur.value = parseFloat(aud.value) * 1.60329;
+    cad.value = parseFloat(aud.value) * 0.88297;
+    jpy.value = parseFloat(gbp.value) * 87.19;
+}
+
+function usdfunc()
+{
+    gbp.value = parseFloat(usd.value) * 2.03032;
+    eur.value = parseFloat(usd.value) * 1.41544;
+    cad.value = parseFloat(usd.value) * 1.01941;
+    aud.value = parseFloat(usd.value) * 0.88297;
+    jpy.value = parseFloat(gbp.value) * 110.17;     
+}
+
+ function jpyfunc()
+{
+    gbp.value = parseFloat(gbp.value) * 0.0064; 
+    usd.value = parseFloat(usd.value) * 0.0091;
+    eur.value = parseFloat(usd.value) * 0.0073;
+    cad.value = parseFloat(usd.value) * 0.011;
+    aud.value = parseFloat(usd.value) * 0.011;           
+}
+function cnyfunc()
+{
+    gbp.value = parseFloat(gbp.value) * 0.0064; 
+    usd.value = parseFloat(usd.value) * 0.0091;
+    eur.value = parseFloat(usd.value) * 0.0073;
+    cad.value = parseFloat(usd.value) * 0.011;
+    aud.value = parseFloat(usd.value) * 0.011;           
+}
+        
+    
+
+curfunc();
+        
+        </script>
+    </body>
+</html>
