@@ -1,0 +1,461 @@
+
+<html>
+<head>
+  <title>Sorting Quiz</title>
+  <style>
+    body {
+       background-image: url("http://getwallpapers.com/wallpaper/full/d/6/6/640822.jpg");
+            background-size: 100%;
+            background-attachment: Fixed;
+      font-family: Arial,Helvetica,sans-serif;
+      font-size: 12px;
+        color: white;
+        
+    }
+      img{
+          width 90%
+          max-width: 300px;
+          max-height: 200px;
+      }
+  </style>
+</head>
+<body>
+  <h1>Hogwarts Sorting Quiz</h1>
+  <form>
+      <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Colouring_pencils.jpg/300px-Colouring_pencils.jpg">
+      <br>
+    What color do you like best?
+    <blockquote>
+      <input type="radio" name="color" id="blue" value="Blue">
+      <label for="blue">Blue</label>
+      <br>
+      <input type="radio" name="color" id="red" value="Red">
+      <label for="red">Red</label>
+      <br>
+      <input type="radio" name="color" id="yellow" value="Yellow">
+      <label for="yellow">Yellow</label>
+      <br>
+      <input type="radio" name="color" id="green" value="Green">
+      <label for="green">Green</label>
+    </blockquote>
+      <br>
+      <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuljLsNfj-PA2KtVAKryH2BYDFV8E-tkYNgmgof_NoSkhql_aMAw">
+      <br>
+      What animal do you like best?
+      <blockquote>
+      <input type="radio" name="animal" id="dog" value="Dog">
+      <label for="dog">Dog</label>
+      <br>
+      <input type="radio" name="animal" id="cat" value="Cat">
+      <label for="cat">Cat</label>
+      <br>
+      <input type="radio" name="animal" id="owl" value="Owl">
+      <label for="owl">Owl</label>
+      <br>
+      <input type="radio" name="animal" id="rat" value="Rat">
+      <label for="rat">Rat</label>
+      </blockquote>
+      <br>
+      <img src ="https://static.tumblr.com/6092189b39d370966dc5fd2d4154788c/g6wzvnv/gcco0j9gf/tumblr_static_tumblr_static_bkbwrdkoabk0kcgkggwgwsgos_640.jpg">
+      <br>
+      What element do you like the most?
+      <blockquote>
+      <input type="radio" name="element" id="air" value="Air">
+      <label for="air">Air</label>
+      <br>
+      <input type="radio" name="element" id="water" value="Water">
+      <label for="water">Water</label>
+      <br>
+      <input type="radio" name="element" id="earth" value="Earth">
+      <label for="earth">Earth</label>
+      <br>
+      <input type="radio" name="element" id="fire" value="Fire">
+      <label for="fire">Fire</label>
+      </blockquote>
+      <br>
+      <img src ="https://i.ytimg.com/vi/JoeCmeD_6Pw/maxresdefault.jpg">
+      <br>
+      You would be most hurt is someone called you...
+      <blockquote>
+      <input type="radio" name="hurt" id="weak" value="Weak">
+      <label for="weak">Weak</label>
+      <br>
+      <input type="radio" name="hurt" id="ignorant" value="Ignorant">
+      <label for="ignorant">Ignorant</label>
+      <br>
+      <input type="radio" name="hurt" id="unkind" value="Unkind">
+      <label for="unkind">Unkind</label>
+      <br>
+      <input type="radio" name="hurt" id="boring" value="Boring">
+      <label for="boring">Boring</label>
+      </blockquote>
+      <br>
+      <img src ="https://i.ebayimg.com/images/g/7wwAAOSwKOJYGNMe/s-l300.jpg">
+      <br>
+      Choose a Deathly Hallow.
+      <blockquote>
+      <input type="radio" name="dh" id="wand" value="Wand">
+      <label for="want">The Elder Wand</label>
+      <br>
+      <input type="radio" name="dh" id="stone" value="Stone">
+      <label for="stone">The Resurrection Stone</label>
+      <br>
+      <input type="radio" name="dh" id="cloak" value="Cloak">
+      <label for="cloak">The Cloak of Invisibility</label>
+      </blockquote>
+      <br>
+      <img src ="https://images.pottermore.com/bxd3o8b291gf/3qDq1So6CseO6ek4MyuE0a/09e857397ec2bad973cc494559133b57/FiliusFlitwick_PM_B1C10M2_CharmsClass_Moment.jpg?w=320&h=320&fit=thumb&f=top&q=85">
+      <br>
+      Pick a Class
+      <blockquote>
+      <input type="radio" name="clas" id="charms" value="Charms">
+      <label for="charms">Charms</label>
+      <br>
+      <input type="radio" name="clas" id="potions" value="Potions">
+      <label for="potions">Potions</label>
+      <br>
+      <input type="radio" name="clas" id="history" value="History">
+      <label for="history">History of Magic</label>
+      <br>
+      <input type="radio" name="clas" id="trans" value="Trans">
+      <label for="trans">Transfiguration</label>
+      </blockquote>
+      <br>
+      <img src ="https://images.pottermore.com/bxd3o8b291gf/4UY6uN1NXOgIyO8suQGqUM/299acc3cdac9607ef42c7972d0c4be22/7.19.1_SilverDoe_Colour_01VG.jpg?w=320&q=85">
+      <br>
+      What Would Your Patronus Be?
+      <blockquote>
+      <input type="radio" name="patronus" id="deer" value="Deer">
+      <label for="deer">Deer</label>
+      <br>
+      <input type="radio" name="patronus" id="fox" value="Fox">
+      <label for="fox">Fox</label>
+      <br>
+      <input type="radio" name="patronus" id="cat" value="Cat">
+      <label for="cat">Cat</label>
+      <br>
+      <input type="radio" name="patronus" id="lion" value="Lion">
+      <label for="lion">Lion</label>
+      </blockquote>
+      <br>
+      <img src ="http://moziru.com/images/wizard-clipart-merlin-8.jpg">
+      <br>
+      How Would You Like to Be Known in History?
+      <blockquote>
+      <input type="radio" name="hist" id="good" value="Good">
+      <label for="good">The Good</label>
+      <br>
+      <input type="radio" name="hist" id="great" value="Great">
+      <label for="great">The Great</label>
+      <br>
+      <input type="radio" name="hist" id="wise" value="Wise">
+      <label for="wise">The Wise</label>
+      <br>
+      <input type="radio" name="hist" id="bold" value="Bold">
+      <label for="bold">The Bold</label>
+      </blockquote>
+      <br>
+      <img src ="https://vignette.wikia.nocookie.net/elderscrolls/images/e/eb/Potions_%28Skyrim%29_Load_Screen.png/revision/latest/scale-to-width-down/250?cb=20120124060844">
+      <br>
+      What Type of Potion would you create?
+      <blockquote>
+      <input type="radio" name="pot" id="wisdom" value="Wisdom">
+      <label for="wisdom">Wisdom</label>
+      <br>
+      <input type="radio" name="pot" id="love" value="Love">
+      <label for="love">Love</label>
+      <br>
+      <input type="radio" name="pot" id="glory" value="Glory">
+      <label for="glory">Glory</label>
+      <br>
+      <input type="radio" name="pot" id="power" value="Power">
+      <label for="power">Power</label>
+      </blockquote>
+      <br>
+      <img src ="https://www.mindandsoulfoundation.org/Images/content/1175/694900.jpg">
+      <br>
+      Which of These do you Find Most Difficult to Deal With?
+      <blockquote>
+      <input type="radio" name="diff" id="hunger" value="Hunger">
+      <label for="hunger">Hunger</label>
+      <br>
+      <input type="radio" name="diff" id="cold" value="Cold">
+      <label for="cold">Cold</label>
+      <br>
+      <input type="radio" name="diff" id="loneliness" value="Loneliness">
+      <label for="loneliness">Loneliness</label>
+      <br>
+      <input type="radio" name="diff" id="Ignored" value="ignored">
+      <label for="ignored">Being Ignored</label>
+      </blockquote>
+    <input type="button" id="quizButton" value="Get Sorted!">
+  </form>
+  <p id="resultArea"></p>
+  <script>
+  // gain access to the quiz button and wait for a click
+  var button = document.getElementById("quizButton");
+  button.onclick = checkQuiz;
+
+  function checkQuiz() {
+      var slytherinScore = 0;
+      var gryfindorScore = 0;
+      var ravenclawScore = 0;
+      var hufflepuffScore = 0;
+      
+    console.log("Button pressed!");
+
+    // create a variable to store the user's pokemon
+    var color;
+
+    // get the input data
+    var inputs = document.getElementsByName("color");
+      color = findValue(inputs);
+      document.getElementById("resultArea").innerHTML = color;
+      switch(color)
+          {   case "Red":
+                  gryfindorScore++;
+                  break;
+              case "Blue":
+                  ravenclawScore++;
+                  break;
+              case "Green":
+                  slytherinScore++;
+                  break;
+              case "Yellow":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick a color.<br>";
+          }
+    
+      var animal;
+      inputs = document.getElementsByName("animal");
+        animal = findValue(inputs);
+        document.getElementById("resultArea").innerHTML += "" + animal;
+      switch(animal)
+          {   case "Rat":
+                  gryfindorScore++;
+                  break;
+              case "Owl":
+                  ravenclawScore++;
+                  break;
+              case "Cat":
+                  slytherinScore++;
+                  break;
+              case "Dog":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick an animal.<br>";
+          }
+      
+     var elem;
+      inputs = document.getElementsByName("element");
+      elem = findValue(inputs);
+      document.getElementById("resultArea").innerHTML += ""  + elem;
+      switch(elem)
+          {   case "Fire":
+                  gryfindorScore++;
+                  break;
+              case "Air":
+                  ravenclawScore++;
+                  break;
+              case "Water":
+                  slytherinScore++;
+                  break;
+              case "Earth":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick an element.<br>";
+          }
+      
+       var hurt;
+      inputs = document.getElementsByName("hurt");
+      hurt = findValue(inputs);
+      document.getElementById("resultArea").innerHTML += "" + hurt;
+      switch(hurt)
+          {   case "Boring":
+                  gryfindorScore++;
+                  break;
+              case "Ignorant":
+                  ravenclawScore++;
+                  break;
+              case "Weak":
+                  slytherinScore++;
+                  break;
+              case "Unkind":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick a choice.<br>";
+          }
+        var dh;
+      inputs = document.getElementsByName("dh");
+      dh = findValue(inputs);
+      document.getElementById("resultArea").innerHTML += "" + dh;
+    switch(dh)
+          {   case "Cloak":
+                  gryfindorScore++;
+                  break;
+              case "Stone":
+                  ravenclawScore++;
+                  break;
+              case "Wand":
+                  slytherinScore++;
+                  break;
+              case "Cloak":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick a choice.<br>";
+          }
+       var clas;
+      inputs = document.getElementsByName("clas");
+      clas = findValue(inputs);
+      document.getElementById("resultArea").innerHTML += "" + clas;
+      switch(clas)
+          {   case "Charms":
+                  gryfindorScore++;
+                  break;
+              case "History":
+                  ravenclawScore++;
+                  break;
+              case "Potions":
+                  slytherinScore++;
+                  break;
+              case "Trans":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick a choice.<br>";
+          }
+       var pat;
+      inputs = document.getElementsByName("patronus");
+      pat = findValue(inputs);
+      document.getElementById("resultArea").innerHTML += "" + pat;
+      switch(pat)
+          {   case "Deer":
+                  gryfindorScore++;
+                  break;
+              case "Lion":
+                  ravenclawScore++;
+                  break;
+              case "Fox":
+                  slytherinScore++;
+                  break;
+              case "Cat":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick a patronus.<br>";
+          }
+        var hist;
+      inputs = document.getElementsByName("hist");
+     hist = findValue(inputs);
+      document.getElementById("resultArea").innerHTML += "" + hist;
+      switch(hist)
+          {   case "Bold":
+                  gryfindorScore++;
+                  break;
+              case "Wise":
+                  ravenclawScore++;
+                  break;
+              case "Great":
+                  slytherinScore++;
+                  break;
+              case "Good":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick an option.<br>";
+          }
+        var pot;
+      inputs = document.getElementsByName("pot");
+      pot = findValue(inputs);
+      document.getElementById("resultArea").innerHTML += "" + pot;
+      switch(pot)
+          {   case "Glory":
+                  gryfindorScore++;
+                  break;
+              case "Wisdom":
+                  ravenclawScore++;
+                  break;
+              case "Power":
+                  slytherinScore++;
+                  break;
+              case "Love":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick a potion.<br>";
+          }
+        var diff;
+      inputs = document.getElementsByName("diff");
+      diff = findValue(inputs);
+      document.getElementById("resultArea").innerHTML += "" + diff; 
+      switch(diff)
+          {   case "Ignored":
+                  gryfindorScore++;
+                  break;
+              case "Cold":
+                  ravenclawScore++;
+                  break;
+              case "Loneliness":
+                  slytherinScore++;
+                  break;
+              case "Hunger":
+                  hufflepuffScore++;  
+                  break;
+              default:
+                  document.getElementById("resultArea").innerHTML = "<br> Please pick a choice.<br>";
+          }
+      var image = document.createElement("img");
+      var imageArea = document. getElementById("resultArea");
+      
+      if((gryfindorScore >= ravenclawScore) && 
+        (gryfindorScore >= slytherinScore) && 
+        (gryfindorScore >= hufflepuffScore))
+      {
+          image.src = "https://vignette.wikia.nocookie.net/harrypotter/images/8/8e/0.31_Gryffindor_Crest_Transparent.png/revision/latest?cb=20161124074004";
+          document.getElementById("resultArea").innerHTML = "You are a Gryffindor!</br>";
+      }
+      
+      else if((slytherinScore >= ravenclawScore) && 
+            (slytherinScore >= gryfindorScore) && 
+            (slytherinScore >= hufflepuffScore))
+      {
+          image.src = "https://vignette.wikia.nocookie.net/harryalbuspotter/images/4/45/Slytherin_by_melisarodriguez-d47ly0k.png/revision/latest?cb=20140621170234";
+          document.getElementById("resultArea").innerHTML = "You are a Slytherin!</br>";
+      }
+      else if((ravenclawScore >= slytherinScore) && 
+            (ravenclawScoreScore >= gryfindorScore) && 
+            (ravenclawScoreScore >= hufflepuffScore))
+      {
+          image.src = "https://vignette.wikia.nocookie.net/harrypotter/images/6/6c/Ravenclaw%E2%84%A2_Crest_%28Painting%29.png/revision/latest?cb=20091129184403";
+          document.getElementById("resultArea").innerHTML = "You are a Raveclaw!</br>";
+      }
+      else{
+          image.src = "https://vignette.wikia.nocookie.net/harrypotterfanon/images/0/08/Hufflepuff_%28transparent%29.png/revision/latest?cb=20160301020936";
+          document.getElementById("resultArea").innerHTML = "You are a Hufflepuff! </br>";
+      }
+      imageArea.appendChild(image);
+  }
+      function findValue(inputs){
+        var checkvalue;
+          for (var i=0; i <inputs.length; i++)
+              {
+                  if(inputs[i].checked)
+                      {
+                      {checkvalue = inputs[i].value;
+                      console.log(checkvalue);}
+              }
+      }
+          return checkvalue;
+    }
+      
+      
+
+  </script>
+</body>
+</html>
